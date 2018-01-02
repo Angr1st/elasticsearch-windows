@@ -1,5 +1,7 @@
 # Elasticsearch
 
+This is a blatant Copy of this [Repo](https://github.com/sixeyed/dockerfiles-windows).
+
 Windows Nano Server image for [Elasticsearch](http://elastic.co).
 
 # Usage
