@@ -1,5 +1,5 @@
 # escape=`
-FROM openjdk:8-jdk-windowsservercore
+FROM openjdk:8-jdk-windowsservercore-ltsc2016
 SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]
 
 # Elasticsearch
