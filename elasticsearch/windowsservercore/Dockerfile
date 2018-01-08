@@ -19,7 +19,7 @@ VOLUME C:\data
 RUN Set-ItemProperty -path 'HKLM:\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters' -Name ServerPriorityTimeLimit -Value 0 -Type DWord; `
     Set-ItemProperty -path 'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\DOS Devices' -Name 'G:' -Value '\??\C:\data' -Type String    
 
-HEALTHCHECK --interval=5s `
+HEALTHCHECK --interval=10s `
  CMD powershell -command `
     try { `
      $content = (iwr -useb http://localhost:9200/_cat/health).Content; `
